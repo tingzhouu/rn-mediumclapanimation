@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import COLORS from './colors';
 import ClapsButton from './ClapsButton';
 
@@ -7,7 +7,9 @@ class MediumLike extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ClapsButton />
+        <ClapsButton
+          // clapCount={13} // Optional: use this prop to initialize number of claps
+        />
       </View>
     );
   }
